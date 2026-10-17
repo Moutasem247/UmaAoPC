@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://bsqfxmnphbe5j"]
+
+[ext_resource type="Script" uid="uid://cbm446ebmxok5" path="res://desktop.gd" id="1_x0l4i"]
+[ext_resource type="Texture2D" uid="uid://bulyubjogbb0l" path="res://assets/wallpaper.png" id="2_uh226"]
+
+[node name="Desktop" type="Control" unique_id=2050722312]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_x0l4i")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1087413092]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_uh226")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="IconColumn" type="VBoxContainer" parent="." unique_id=1034302401]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="WindowLayer" type="Control" parent="." unique_id=981627061]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
